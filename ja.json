@@ -1,0 +1,20 @@
+{
+  "styles" : [["base" , {"wordWrap": "CJK" }]
+  ],
+  "fontsAlias" : {
+    "stdFont": "IPAPGothic",
+    "stdBold": "IPAPGothic",
+    "stdItalic": "IPAPGothic",
+    "stdBoldItalic": "IPAPGothic",
+    "stdMono": "IPAGothic",
+    "stdSans": "IPAPMincho",
+    "stdSansBold": "IPAPMincho",
+    "stdSansItalic": "IPAPMincho",
+    "stdSansBoldItalic": "IPAPMincho",
+    "stdMonoItalic": "IPAGothic",
+    "stdMonoBold": "IPAGothic",
+    "stdMonoBoldItalic": "IPAGothic",
+    "stdSerif": "IPAPGothic"
+  }
+
+}
