@@ -22,6 +22,13 @@
 
 元々の原稿も完成しておらず, 網羅されていない. タイトルのみの節もある. また検証されていない部分も多い. 
 
+この文書は以下で公開している.
+
+* `haruyama/SecurityPolicySample - GitHub <https://github.com/haruyama/SecurityPolicySample>`_
+* `情報セキュリティポリシー サンプル — Infomation Security Policy valpha documentation <http://www.unixuser.org/~haruyama/security/SecurityPolicySample/>`_
+
+  * 手動で生成/同期しているので, 最新なことは保証しない.
+  
 
 .. toctree::
    :maxdepth: 2
