@@ -4,7 +4,9 @@ DB利用時の手順
 参考資料
 --------------
 
-`安全なSQLの呼び出し方 <http://www.ipa.go.jp/security/vuln/documents/website_security_sql.pdf>`_
+* `安全なSQLの呼び出し方 <http://www.ipa.go.jp/security/vuln/documents/website_security_sql.pdf>`_
+* `データベース・セキュリティの実装　第1回　アクセスコントロールと権限管理 | oracletech.jp <http://oracletech.jp/products/pickup/000239.html>`_
+* `データベース・セキュリティの実装　第2回 ログの取得と監査設計のポイント | oracletech.jp <http://oracletech.jp/products/pickup/000252.html>`_
 
 データベース・表・カラムへの制約
 -------------------------------------------
