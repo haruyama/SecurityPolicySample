@@ -94,3 +94,5 @@ pdf:
 	@echo
 	@echo "Build finished. The PDF files are in _build/pdf."
 
+sync:
+	rsync -av ~/work/SecurityPolicySample/_build/html/ mail.unixuser.org:public_html/security/SecurityPolicySample
