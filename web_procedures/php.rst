@@ -215,7 +215,7 @@ PHPのheader()関数は, ラインフィード(0x0A)はチェックし複数の�
 
     function redirect($url, $code = 302)
     {
-        if (strpos($url, "0x0d") === false) {
+        if (strpos($url, "\x0d") === false) {
             header('Location: ' . $url, $code);
         }
         error_log('redirect: ' . $url);
