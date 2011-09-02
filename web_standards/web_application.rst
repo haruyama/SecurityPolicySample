@@ -152,3 +152,10 @@ HTTPレスポンスヘッダで
 * `1分でわかる「X-ナントカ」HTTPレスポンスヘッダ - 葉っぱ日記 <http://d.hatena.ne.jp/hasegawayosuke/20110107/p1>`_
 
 * `X-Content-Type-Options: nosniffのつけ方 | へぼい日記 <http://blog.everqueue.com/chiba/2011/01/06/484/>`_ 
+
+IPアドレス制限
+--------------------------------
+
+要件によりIPアドレス制限をする場合は, 攻撃者によるIPアドレスの偽装が困難な方式でIPアドレスを取得しなければならない.
+
+* `PHP フレームワークでのクライアント IP アドレス取得メソッドの実装について - A Day in Serenity @ Kenji <http://d.hatena.ne.jp/Kenji_s/20110902/1314964517>`_
