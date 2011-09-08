@@ -59,7 +59,7 @@ URLを出力する場合には, 文字列が「http://」 ないし 「https://�
 
 入力パラメータを文字列として扱う場合には, mb_check_encoding()関数でエンコーディングが期待通りかどうかチェックしなければならない. もしくは, mb_convert_encoding()で, 強制的にエンコーディングの変換を行なわなければならない.
 
-注: 現在のmb_check_encoding()は, 5byte, 6byteのUTF-8を有効と判断する.::
+注: 現在のmb_check_encoding()は, 5byte, 6byteのUTF-8を有効と判断する. `最近の mbstring 動向について(PHP 5.4～) - t_komuraの日記 <http://d.hatena.ne.jp/t_komura/20110812/1313125578>`_ によると PHP 5.4 では無効と判断するようになる.::
 
   function checkUtf8($s)
   {
