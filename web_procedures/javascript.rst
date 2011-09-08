@@ -5,18 +5,24 @@ Javascriptの手順
 JSON
 -----------------
 
-JSONは通常はクロスドメインで読み取られないが, 環境によってはクロスドメインで読み取られる可能性がある.
+JSONは通常はクロスドメインで読み取られないが, 環境によってはクロスドメインで読み取られる可能性がある. また, JSONをHTMLとブラウザに解釈させ, XSSを行なう攻撃がある.
 
-`ここが危ない！Web2.0のセキュリティ：第4回　Flash，JSONでのクロスドメインアクセス｜gihyo.jp … 技術評論社 <http://gihyo.jp/dev/serial/01/web20sec/0004?page=2>`_
+* `PHPのイタい入門書を読んでAjaxのXSSについて検討した(3)～JSON等の想定外読み出しによる攻撃～ - ockeghem(徳丸浩)の日記 <http://d.hatena.ne.jp/ockeghem/20110907/p1>`_
 
-JSONで提供するデータに機密情報を含める場合には, クロスドメインでの読み取りを防ぐために以下の対策を行なわなければならない.
+JSONでデータを提供する場合は, 以下の対策を行なわなければならない(上記記事より).
 
-- GETメソッドでのアクセスを禁止し, POSTメソッドのみで取得可能とする.
+- リクエストの X-Requested-With ヘッダの値が 「XMLHttpRequest」かチェックする.
+- レスポンスの Content-Type ヘッダを, 「application/json; charset=UTF-8」と指定する.
 
-機密情報を含めない場合でも, 以上の対策を実行することを推奨する.
+また, 以下の対策を行なうことが望ましい.
 
-参考: `［さらに気になる］JSONの守り方 − ＠IT <http://www.atmarkit.co.jp/fcoding/articles/webapp/05/webapp05a.html>`_
+- JSON生成ライブラリで設定できる最大限のエスケープの実施する
 
+
+参考:
+
+* `ここが危ない！Web2.0のセキュリティ：第4回　Flash，JSONでのクロスドメインアクセス｜gihyo.jp … 技術評論社 <http://gihyo.jp/dev/serial/01/web20sec/0004?page=2>`_
+* `［さらに気になる］JSONの守り方 − ＠IT <http://www.atmarkit.co.jp/fcoding/articles/webapp/05/webapp05a.html>`_
 
 JSONP
 ----------
