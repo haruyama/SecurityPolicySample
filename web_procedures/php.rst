@@ -134,9 +134,8 @@ PHP 5.2 では,  以下を推奨する.::
 クロスサイトリクエストフォージェリ(CSRF)対策
 -----------------------------------------------------------------
 
-HTMLテンプレートにて次のように「type="hidden"」でvalue属性値がセッションIDのハッシュ値であるinput要素を生成し, 処理側でその値がセッションIDのハッシュ値と等しいことを検証する.::
+トークンの生成には `openssl_random_pseudo_bytes() <http://www.php.net/manual/ja/function.openssl-random-pseudo-bytes.php>`_ が利用できる.
 
-  <input type="hidden" name="csrf_token" value="<?php echo h(hash('sha256', session_id())); ?>">
 
 セッション固定攻撃対策
 -------------------------------------
