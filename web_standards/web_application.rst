@@ -63,7 +63,7 @@ TODO: JavaScriptの手順に分離
 サービスの開発者は, 「3) <script>..</script> 要素の内容を動的に生成しないように」しなければならない. script要素の内部で動的な情報を取り扱いたい場合には, 画面に表れないHTMLの要素を利用する.
 
   * 標準的には, input要素(type="hidden")のvalue属性値に動的な情報を定義して(HTMLエスケープは行なうこと)スクリプトからDOM経由で参照する.
-  * `JavaScript の Unicode エスケープシーケンスに変換する - Sarabande.jp <http://blog.sarabande.jp/post/35972141027>`_ のようなエスケープを利用して, 動的な文字列を JavaScript の文字列リテラルに埋め込む方法を利用してもよい.
+  * `JavaScript の Unicode エスケープシーケンスに変換する - Sarabande.jp <http://blog.sarabande.jp/post/35972141027>`_ のようなエスケープ方式を利用して, 動的な文字列をエスケープして JavaScript の文字列リテラルに埋め込む方法を利用してもよい.
 
 * サービスの開発者は, JavaScriptのdocument.write(), document.writeln()関数や, innerHTML, outerHTMLプロパティ, JQueryの.html()関数などを用いて動的な情報を出力することを避ける必要がある. これらの方法は指定した値のHTMLエスケープを行わない. これらの方法を利用しなければならない場合は, 適切なHTMLエスケープを行なわなければならない. もしくは, 適切にHTMLエスケープを行なうテンプレートエンジンを利用しなければならない.
 
